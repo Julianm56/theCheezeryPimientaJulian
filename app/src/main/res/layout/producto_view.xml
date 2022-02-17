@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/producto_img"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/caramelfrap"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="47dp"/>
+
+    <LinearLayout
+    android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/producto_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caramel Frap"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/nombre_Producto"
+            android:textSize="20sp"
+            android:layout_marginLeft="6dp"/>
+
+
+        <TextView
+            android:id="@+id/producto_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripcion del producto"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/descripcion_Producto"
+            android:textSize="8sp"
+            android:layout_marginLeft="8dp"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/producto_precio"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="$5.00"
+        android:textColor="@color/precio_Producto"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-53dp"/>
+
+
+</LinearLayout>
